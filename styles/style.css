@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    background-color: aqua;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10em;
+    height: 100vh;
+
+}
+
+#right {
+    background-color: blue;
+    height: 100vh;
+}
+
+#center {
+    background-color: yellow;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+#left {
+    background-color: red;
+    height: 100vh;
+}
